@@ -4,35 +4,35 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "ru");
     double num1{ 0 }, num2{ 0 }, result{ 0 };
-    cout << "Введите первое число: ";
+    cout << "Enter first number: ";
     cin >> num1;
-    cout << "Введите второе число: ";
+    cout << "Enter second number: ";
     cin >> num2;
     char oper;
-    cout << "Введите оператор (+, -, *, /): ";
+    cout << "Enter operator (+, -, *, /): ";
     cin >> oper;
 
     switch (oper) {
     case '+': 
         result = num1 + num2;
-        cout << "Результат сложения: " << result << endl;
+        cout << "addition result: " << result << endl;
         break;
     case '-': 
         result = num1 - num2;
-        cout << "Результат вычитания: " << result << endl;
+        cout << "subtraction result: " << result << endl;
         break;
     case '*': 
         result = num1 * num2;
-        cout << "Результат умножения: " << result << endl;
+        cout << "multiplication result: " << result << endl;
         break;
     case '/':
         if (num2 != 0) {
             result = num1 / num2;
-            cout << "Результат умножения: " << result << endl;
+            cout << "division result: " << result << endl;
             break;
         } 
         else {
-            cout << "Ошибка: деление на ноль!" << endl;
+            cout << "Error: division by zero!" << endl;
         }
     }
 
